@@ -4,14 +4,10 @@ body {
 
 .main {
 	background-color: white;
+	height: 500px;
 	margin-top: 110px;
 	padding-left: 100px;
 	min-width: 1200px;
-	height: 500px;
-}
-
-.ryu {
-	float: left;
 }
 
 .ryu-still, 
@@ -20,30 +16,43 @@ body {
 	width: 659px;
 	height: 494px;
 }
-
-.ryu-ready,
+/* for some reason, developer tools will not let me switch between
+the ready and throwing image unless display is seperate for the two */
+.ryu-ready {
+	display: none;
+}
 .ryu-throwing {
 	display: none;
 }
 
-}
-
 .ryu-still {
-	background-image: url(../images/ryu-standing-still.png);
+	background-image: url(../images/still.png);
+	display: block;
 }
 
 .ryu-ready {
-	background-image: url(../images/ryu-ready-position.gif);
+	background-image: url(../images/ready.gif);
 }
 
 .ryu-throwing {
-	background-image: url(../images/ryu-throwing-hadouken.png);
+	background-image: url(../images/throwing.png);
 }
 
-.hadouken,
-.ryu-still,
-.ryu-ready,
-.ryu-throwing {
+.ryu-still, 
+.ryu-ready, 
+.ryu-throwing, 
+.hadouken {
 	background-repeat: no-repeat;
 }
 
+.hadouken {
+	background-image: url(../images/hadouken.gif);
+	width: 156px;
+	height: 90px;
+	display: none;
+	position: relative;
+	top: -324px;
+	left: 530px;
+	float: left;
+
+}
