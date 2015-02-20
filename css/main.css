@@ -10,6 +10,10 @@ body {
 	min-width: 1200px;
 }
 
+.ryu {
+	float: left;
+}
+
 .ryu-still, 
 .ryu-ready, 
 .ryu-throwing {
@@ -51,8 +55,7 @@ the ready and throwing image unless display is seperate for the two */
 	height: 90px;
 	display: none;
 	position: relative;
-	top: -324px;
-	left: 530px;
+	top: 170px;
+	left: -212px;
 	float: left;
-
 }
