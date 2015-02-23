@@ -7,4 +7,15 @@ $(document).ready(function() {
 		$(".ryu-ready").hide();
 		$(".ryu-still").show();
 	})
+	.mousedown(function() {
+		// play hadouken sound
+		$(".ryu-ready").hide();
+		$(".ryu-throwing").show();
+		$(".hadouken").show();
+		//animate it to the right of the screen
+	})
+	.mouseup(function() {
+		$(".ryu-throwing").hide();
+		$(".ryu-ready").show();
+	});
 });
