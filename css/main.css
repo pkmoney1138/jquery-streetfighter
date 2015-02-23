@@ -4,10 +4,12 @@ body {
 
 .main {
 	background-color: white;
-	height: 500px;
 	margin-top: 110px;
 	padding-left: 100px;
 	min-width: 1200px;
+	height: 500px;
+	position: relative;
+	z-index: 1;	
 }
 
 .ryu {
@@ -54,8 +56,10 @@ the ready and throwing image unless display is seperate for the two */
 	width: 156px;
 	height: 90px;
 	display: none;
-	position: relative;
-	top: 170px;
-	left: -212px;
 	float: left;
+	position: absolute;
+	top: 170px;
+	left: 520px;
+	z-index: 10;
+	
 }
