@@ -18,19 +18,13 @@ body {
 
 .ryu-still, 
 .ryu-ready, 
-.ryu-throwing {
+.ryu-throwing,
+.ryu-cool {
 	width: 659px;
 	height: 494px;
 }
 /* for some reason, developer tools will not let me switch between
 the ready and throwing image unless display is seperate for the two */
-.ryu-ready {
-	display: none;
-}
-.ryu-throwing {
-	display: none;
-}
-
 .ryu-still {
 	background-image: url(../images/still.png);
 	display: block;
@@ -38,15 +32,23 @@ the ready and throwing image unless display is seperate for the two */
 
 .ryu-ready {
 	background-image: url(../images/ready.gif);
+	display: none;
 }
 
 .ryu-throwing {
 	background-image: url(../images/throwing.png);
+	display: none;
+}
+
+.ryu-cool {
+	background-image: url(../images/cool.gif);
+	display: none;
 }
 
 .ryu-still, 
 .ryu-ready, 
-.ryu-throwing, 
+.ryu-throwing,
+.ryu-cool, 
 .hadouken {
 	background-repeat: no-repeat;
 }

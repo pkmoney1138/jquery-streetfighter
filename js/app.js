@@ -23,6 +23,12 @@ $(document).ready(function() {
 		$(".ryu-throwing").hide();
 		$(".ryu-ready").show();
 	});
+	$(document).keydown(function() {
+		//specific key press goes here
+		$(".ryu-still").hide();
+		$(".ryu-ready").hide();
+		$(".ryu-cool").show();
+	})
 });
 
 function playHadouken () {
