@@ -65,3 +65,24 @@ the ready and throwing image unless display is seperate for the two */
 	z-index: 10;
 	
 }
+
+
+.instructions {
+	position: absolute;
+	width: 570px;
+	height: 375px;
+	margin-left: 550px;
+	padding-top: 75px;
+	font-family: fantasy;
+	font-weight: 900;
+	font-size: 30px;
+}
+
+.instructions p {
+	width: 270px;
+	line-height: 45px;
+}
+
+.instructions p + p {
+	margin-left: 270px;
+}
